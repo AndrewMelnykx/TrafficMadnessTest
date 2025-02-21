@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Traffic Madness [Link](https://andrewmelnykx.github.io/Traffic_Madness_Test/)
 
-Currently, two official plugins are available:
+is a modern React-based project providing crypto trading advice with an interactive layout and responsive design. Built with TypeScript and Vite, it ensures a robust development experience and fast build times. This project focuses on a clean, functional frontend with React components and a simple state management approach where needed.
+![Screenshot 2025-02-21 015406](https://github.com/user-attachments/assets/df5f022e-967c-4ce5-89d5-1359b0deef66)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Features
+React with TypeScript: Ensures type safety and scalable development.
+Vite: Fast development and build environment for React projects.
+Responsive Layout: Optimized for various screen sizes, suitable for mobile and desktop users.
+Component-Based Architecture: Reusable and modular React components to ensure maintainability.
+Crypto Trading Focus: Designed to display trading advice, tariffs, and statistics relevant to crypto markets.
+Getting Started
+Prerequisites
+Make sure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Node.js (v16 or higher)
+npm (comes with Node.js) or Yarn
+Git
+Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/AndrewMelnykx/Traffic_Madness_Test.git
+cd Traffic_Madness_Test
+Install Dependencies
+Using npm:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copy
+Edit
+npm install
+Or using Yarn:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+bash
+Copy
+Edit
+yarn install
+Run the Project Locally
+bash
+Copy
+Edit
+npm run dev
