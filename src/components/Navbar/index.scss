@@ -1,0 +1,120 @@
+$lightBlue: #57e1ff;
+$black: #030718;
+
+.navbar-wrapper {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  gap: 2%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  position: relative;
+  padding: 20px;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $lightBlue;
+    transition: width 0.4s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    text-shadow: 2px 1px 10px $lightBlue;
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.signup-btn {
+  background: $lightBlue;
+  color: $black;
+  height: 42px;
+  font-size: 14px;
+  padding: 0 20px;
+  border: 1px solid $lightBlue;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 160px;
+
+  &:hover {
+    background: $black;
+    color: $lightBlue;
+    border: 1px solid $lightBlue;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.login-btn {
+  background-color: $black;
+  color: $lightBlue;
+  height: 42px;
+  font-size: 14px;
+  padding: 0 20px;
+  border: 1px solid $lightBlue;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $lightBlue;
+    color: $black;
+    border: 1px solid $lightBlue;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .buttons-wrapper {
+    justify-content: center;
+  }
+
+  .signup-btn,
+  .login-btn {
+    height: 36px;
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}

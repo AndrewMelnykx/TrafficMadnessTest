@@ -1,0 +1,128 @@
+$purple: #6a54ff;
+$black: #000001;
+$green: #35ff9e;
+$darkBlue: #434f70;
+$lightBlue: #6073a1;
+
+.cards-image {
+  display: flex;
+  width: 123px;
+  height: 160px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.template-wrapper {
+  flex: 0 0 300px;
+  height: 200px;
+  background-color: $purple;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+}
+
+.cards-title {
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  font-size: 44px;
+  color: white;
+}
+.card-bar {
+  background-color: $black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 130px;
+  width: 50px;
+  transform: rotate(130deg);
+  margin-top: -15%;
+  margin-right: -5%;
+}
+.value-pair {
+  color: white;
+  font-size: 20px;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.card-info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+.timeline {
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.profit-title {
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.profit-percentage {
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  color: $green;
+  font-size: 28px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.card-target {
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card-date {
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-top: 5%;
+}
+.card-lower-bar {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.cards-wrapper {
+  display: flex;
+  height: 100%;
+  margin-top: 5%;
+  gap: 75px;
+  overflow-x: auto;
+  width: 100%;
+  height: 300px;
+}
+
+.cards-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards-wrapper::-webkit-scrollbar-track {
+  background: $lightBlue;
+  border-radius: 10px;
+}
+
+.cards-wrapper::-webkit-scrollbar-thumb {
+  background: $darkBlue;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.cards-container {
+  height: 600px;
+}

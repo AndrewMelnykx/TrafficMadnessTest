@@ -1,0 +1,170 @@
+$lightBlue: #57e1ff;
+$darkPurple: #6a54ff;
+$lightGreen: #35ff9e;
+$lightGrey: #4e545c;
+.tariff-title {
+  color: white;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+
+.tariff-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150vh;
+  background-color: black;
+}
+
+.cards-buttons-wrapper {
+  width: 413px;
+  height: 52px;
+  background-color: $darkPurple;
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 50%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+}
+
+.spot,
+.futures {
+  color: $lightBlue;
+}
+
+.spot.selected,
+.futures.selected {
+  color: black;
+  background-color: $lightBlue;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.spot:not(.selected),
+.futures:not(.selected) {
+  color: $lightBlue;
+  transition: color 0.3s ease-out;
+  background-color: transparent;
+}
+
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.card-vip,
+.card-standard {
+  width: 400px;
+  height: 550px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.card-standard {
+  border: 1px solid $darkPurple;
+  background-color: black;
+}
+
+.card-vip {
+  background-color: $darkPurple;
+}
+
+.tariff-cards-wrapper {
+  display: flex;
+  height: 900px;
+  gap: 20px;
+}
+.tariff-card-title {
+  color: white;
+  font-size: 32px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.date-price-wrapper {
+  display: flex;
+}
+
+.discount {
+  color: $lightGreen;
+  font-size: 18px;
+  margin-top: -5%;
+}
+.tariff-price {
+  color: white;
+  font-size: 35px;
+  display: flex;
+  margin-left: 10%;
+}
+.date {
+  color: white;
+}
+.date-wrapper,
+.date-price-wrapper-vip {
+  display: flex;
+  background-color: $lightGrey;
+  width: 120px;
+  height: 40px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 10%;
+  margin-right: 4%;
+}
+.date-price-wrapper {
+  margin-top: 10%;
+}
+.date-price-wrapper-vip {
+  margin-top: 5%;
+}
+.date-vector {
+  margin-left: 10%;
+  height: 15px;
+  width: 15px;
+}
+.date-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  margin-top: 20%;
+}
+.tariff-button {
+  width: 90%;
+  height: 70px;
+  background-color: $lightBlue;
+  color: black;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 2%;
+}
+.tariff-button-span {
+  font-size: 12px;
+}
+.vip {
+  background: $darkPurple;
+}

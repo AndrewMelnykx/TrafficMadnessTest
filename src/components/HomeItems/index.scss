@@ -1,0 +1,85 @@
+$darkPurple: #201a4f;
+$lightBlue: #57e1ff;
+$black: #030718;
+
+.home-items-main-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.home-items-right-wrapper {
+  display: flex;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+.home-right-image {
+  width: 469px;
+  height: 200px;
+}
+.home-items-left-wrapper {
+  width: 50%;
+  height: 500px;
+  margin-top: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  margin-bottom: 0;
+}
+.description {
+  font-size: 20px;
+  color: white;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+}
+.home-input-wrapper {
+  width: 490px;
+  position: relative;
+}
+
+.home-input {
+  background-color: $darkPurple;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10 20;
+  color: white;
+  border: none;
+}
+
+.home-input-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $lightBlue;
+  color: $black;
+  font-size: 14px;
+  padding: 10 20px;
+  border: 1px solid $lightBlue;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 110px;
+  height: 50px;
+}
+
+.home-input::placeholder {
+  color: white;
+  padding: 10px 20px;
+}
+.home-input-button:hover {
+  background: $black;
+  color: $lightBlue;
+  border: 1px solid $lightBlue;
+  transition: 0.5s ease-in-out;
+}
+.notion {
+  color: white;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+}

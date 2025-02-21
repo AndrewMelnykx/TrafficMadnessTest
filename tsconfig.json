@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "types": ["node"],
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@header/*": ["src/components/header/*"],
+      "@components/*": ["src/components/*"],
+      "@nav-bar/*": ["src/components/nav-bar/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

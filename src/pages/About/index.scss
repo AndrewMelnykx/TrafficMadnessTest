@@ -1,0 +1,54 @@
+$black: #000001;
+$green: #35ff9e;
+$purple: #6a54ff;
+$darkPurple: #201a4f;
+$lightBlue: #57e1ff;
+$pitchBlack: #030718;
+
+.about-wrapper {
+  width: 100%;
+  height: 600px;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.status-indicator {
+  color: $green;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", "Concert One", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cards-title {
+  margin-bottom: 0;
+}
+.cards-title-wrapper {
+  margin-left: 5%;
+}
+.about-description-wrapper {
+  height: 800px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+.about-black-half-square {
+  background-color: $black;
+  height: 40px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  margin-top: -12.5%;
+}
+.about-slight-slope {
+  position: absolute;
+  background-color: $black;
+  transform: rotate(130deg);
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 90px;
+  margin-bottom: -1.8px;
+  margin-left: -42px;
+  border-radius: 1px;
+}

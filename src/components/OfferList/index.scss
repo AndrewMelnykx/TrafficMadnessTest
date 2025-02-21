@@ -1,0 +1,17 @@
+.offer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer {
+  color: white;
+  font-size: 16px;
+  list-style: none;
+  padding: 1px 1px 10px;
+}
+.offer-icon {
+  margin-right: 2%;
+}
+.second {
+  margin-bottom: -12%;
+}

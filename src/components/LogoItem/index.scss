@@ -1,0 +1,19 @@
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+
+  .logo-pic {
+    width: 120px;
+    margin-right: -15%;
+    margin-top: -5%;
+  }
+
+  .logo-name {
+    width: 120px;
+  }
+
+  img {
+    height: auto;
+  }
+}
