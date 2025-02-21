@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import "./index.scss";
+import Vector from "@assets/tariffs/SentanceVector5.png";
+const OfferList = () => {
+    return (_jsxs("ul", { className: "offer-list", children: [_jsxs("li", { className: "offer", children: [_jsx("img", { className: "offer-icon", src: Vector, alt: "vector" }), "\u0420\u0443\u0447\u043D\u043E\u0439 \u0442\u0440\u0435\u0439\u0434\u0438\u043D\u0433"] }), _jsxs("li", { className: "offer", children: [_jsx("img", { className: "offer-icon", src: Vector, alt: "vector" }), "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u0438\u043B\u0438 \u043F\u043E\u043B\u0443\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0441\u0434\u0435\u043B\u043E\u043A"] }), _jsxs("li", { className: "offer", children: [_jsx("img", { className: "offer-icon", src: Vector, alt: "vector" }), "\u041B\u0438\u0447\u043D\u044B\u0439 \u043A\u0430\u0431\u0438\u043D\u0435\u0442 \u0441\u043E \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u043E\u0439"] }), _jsxs("li", { className: "offer", children: [_jsx("img", { className: "offer-icon", src: Vector, alt: "vector" }), "\u0421\u0440\u0435\u0434\u043D\u0435\u0441\u0440\u043E\u0447\u043D\u044B\u0435 \u0441\u0434\u0435\u043B\u043A\u0438 \u0441 \u0443\u0440\u043E\u0432\u043D\u044F\u043C\u0438 \u043D\u0430\u0431\u043E\u0440\u0430 \u043F\u043E\u0440\u0442\u0444\u0435\u043B\u044F"] })] }));
+};
+export default OfferList;
