@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/TrafficMadnessTest/",
+  base: "/Traffic_Madness_Test/",
   build: { outDir: path.resolve(__dirname, "dist") },
   css: {
     preprocessorOptions: {
