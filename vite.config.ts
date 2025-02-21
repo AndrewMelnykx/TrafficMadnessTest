@@ -6,7 +6,9 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   base: "/Traffic_Madness_Test/",
-  build: { outDir: path.resolve(__dirname, "dist") },
+  build: {
+    outDir: path.resolve(__dirname, "dist"),
+  },
   css: {
     preprocessorOptions: {
       scss: {
@@ -19,7 +21,6 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "src/assets"),
       "@header": path.resolve(__dirname, "src/components/header"),
       "@components": path.resolve(__dirname, "src/components"),
-      "@nav-bar": path.resolve(__dirname, "src/components/nav-bar"),
       "@pages": path.resolve(__dirname, "src/pages"),
     },
   },

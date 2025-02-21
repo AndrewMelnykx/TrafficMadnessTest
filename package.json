@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AndrewMelnykx.github.io/Traffic_Madness_Test",
+  "homepage": "https://andrewmelnykx.github.io/Traffic_Madness_Test/",
   "scripts": {
     "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest",
-    "build": "tsc -b && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
